@@ -1,0 +1,91 @@
+﻿@using EmpManagementEF
+@model IEnumerable<Employee>
+@{
+    ViewData["Title"] = "Home Page";
+}
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.EmpId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EmpFname)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EmpLname)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DeptId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.QualId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PositionId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Supervisor)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Hiredate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Salary)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Commission)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.EmpId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EmpFname)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EmpLname)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DeptId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.QualId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PositionId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Supervisor)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Hiredate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Salary)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Commission)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id=item.EmpId}) |
+                @Html.ActionLink("Details", "Details", new { id=item.EmpId}) |
+                @Html.ActionLink("Delete", "Delete", new { id=item.EmpId})
+            </td>
+        </tr>
+    }
+
+</table>

@@ -1,0 +1,86 @@
+﻿@using EmpManagementEF
+@model Employee
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.EmpId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EmpFname)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EmpLname)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DeptId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.QualId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PositionId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Supervisor)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Hiredate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Salary)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Commission)
+        </th>
+        <th></th>
+    </tr>
+    
+        <tr>
+            <td>
+                @Html.DisplayFor(model => model.EmpId)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.EmpFname)
+            </td>
+            <td>
+                @Html.DisplayFor(model=> model.EmpLname)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.DeptId)
+            </td>
+            <td>
+                @Html.DisplayFor(model=> model.QualId)
+            </td>
+            <td>
+                @Html.DisplayFor(model=> model.PositionId)
+            </td>
+            <td>
+                @Html.DisplayFor(model=> model.Supervisor)
+            </td>
+            <td>
+                @Html.DisplayFor(model=> model.Hiredate)
+            </td>
+            <td>
+                @Html.DisplayFor(model=> model.Salary)
+            </td>
+            <td>
+                @Html.DisplayFor(model=> model.Commission)
+            </td>
+            <td>
+            @Html.ActionLink("Edit", "Edit",new { id=Model.EmpId}) |
+            @Html.ActionLink("Details", "Details",new{ id=Model.EmpId}) |
+            @Html.ActionLink("Delete", "Delete", new{ id=Model.EmpId})
+            </td>
+        </tr>
+    
+    <div>
+        @Html.ActionLink("Back to List", "Index")
+    </div>
+
+</table>

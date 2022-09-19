@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>disable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>EmployeeManagement.DataModel</RootNamespace>	 
+  </PropertyGroup>
+
+	<ItemGroup>
+	</ItemGroup>
+	
+  <ItemGroup>
+    <ProjectReference Include="..\DataAccessDapperPG\Services.DapperPG.csproj" />
+    <ProjectReference Include="..\DataAccessDapper\Services.Dapper.csproj" />
+    <ProjectReference Include="..\DataAccessEF\Services.EF.csproj" />
+    <ProjectReference Include="..\DataAccessWebAPI\Services.WebAPI.csproj" />
+    <ProjectReference Include="..\DataAccess\Services.csproj" />
+    <ProjectReference Include="..\DataModel\Models.csproj" />
+  </ItemGroup>
+
+</Project>
