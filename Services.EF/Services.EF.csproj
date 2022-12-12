@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+    <RootNamespace>EmployeeManagement.Services.EF</RootNamespace>
+    <UserSecretsId>f14129ec-a5b5-41bc-9af5-953082fe1b1b</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+	  <ProjectReference Include="..\Services\Services.csproj" />
+	  <ProjectReference Include="..\Models\Models.csproj" />
+  </ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.8" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.8" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.7" />
+		<PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets" Version="5.0.0" />
+	</ItemGroup>
+
+</Project>

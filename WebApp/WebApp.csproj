@@ -4,19 +4,19 @@
     <TargetFramework>net6.0</TargetFramework>
     <Nullable>disable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
-    <RootNamespace>EmployeeManagement.DataModel</RootNamespace>	 
+    <RootNamespace>EmployeeManagement.WebApp</RootNamespace>	 
   </PropertyGroup>
 
 	<ItemGroup>
 	</ItemGroup>
 	
   <ItemGroup>
-    <ProjectReference Include="..\DataAccessDapperPG\Services.DapperPG.csproj" />
-    <ProjectReference Include="..\DataAccessDapper\Services.Dapper.csproj" />
-    <ProjectReference Include="..\DataAccessEF\Services.EF.csproj" />
-    <ProjectReference Include="..\DataAccessWebAPI\Services.WebAPI.csproj" />
-    <ProjectReference Include="..\DataAccess\Services.csproj" />
-    <ProjectReference Include="..\DataModel\Models.csproj" />
+	  <ProjectReference Include="..\Services.DapperPG\Services.DapperPG.csproj" />
+	  <ProjectReference Include="..\Services.Dapper\Services.Dapper.csproj" />
+	  <ProjectReference Include="..\Services.EF\Services.EF.csproj" />
+    <ProjectReference Include="..\Services.WebAPI\Services.WebAPI.csproj" />
+	  <ProjectReference Include="..\Services\Services.csproj" />
+	  <ProjectReference Include="..\Models\Models.csproj" />
   </ItemGroup>
 
 </Project>

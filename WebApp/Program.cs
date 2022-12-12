@@ -13,7 +13,7 @@ namespace EmployeeManagement.WebApp
 
             builder.Services.AddControllersWithViews();
 
-            var dataAccess = builder.Configuration.GetValue<string>("Services", "SqlServerEF");
+            var dataAccess = builder.Configuration.GetValue("Services", "SqlServerDapper");
             if (dataAccess == "SqlServerEF")
                 builder.Services.AddTransient<IEmployeeService, Services.EF.EmployeeService>();
             else

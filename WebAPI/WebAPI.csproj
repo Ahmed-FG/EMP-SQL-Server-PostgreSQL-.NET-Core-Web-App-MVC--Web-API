@@ -11,11 +11,11 @@
   </ItemGroup>
 
   <ItemGroup>
-	  <ProjectReference Include="..\DataAccessDapperPG\Services.DapperPG.csproj" />
-	  <ProjectReference Include="..\DataAccessDapper\Services.Dapper.csproj" />
-	  <ProjectReference Include="..\DataAccessEF\Services.EF.csproj" />
-	  <ProjectReference Include="..\DataAccess\Services.csproj" />
-	  <ProjectReference Include="..\DataModel\Models.csproj" />
+	  <ProjectReference Include="..\Services.DapperPG\Services.DapperPG.csproj" />
+	  <ProjectReference Include="..\Services.Dapper\Services.Dapper.csproj" />
+	  <ProjectReference Include="..\Services.EF\Services.EF.csproj" />
+	  <ProjectReference Include="..\Services\Services.csproj" />
+	  <ProjectReference Include="..\Models\Models.csproj" />
   </ItemGroup>
 
 </Project>

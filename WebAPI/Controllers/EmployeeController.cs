@@ -2,7 +2,7 @@ using EmployeeManagement.Services;
 using EmployeeManagement.Models;
 using Microsoft.AspNetCore.Mvc;
 
-namespace EmployeeManagement.WebAPI.Controllers
+namespace WebAPI.Controllers
 {
     [ApiController]
     [Route("[controller]")]
